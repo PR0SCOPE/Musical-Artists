@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Song Artists</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <h1>Famous Song Artists 🎙</h1>
+
+    <h2>This website will show you famous music artists and some songs that they have made.</h2>
+    <br>
+    <h2>4 Music Artists:</h2>
+
+    <h3><a href="Rick.html">Rick Astley</a></h3>
+    <a style="max-width: 38vw; float: right" href="secret.html"><img src="spongebob-singing.gif"></a>
+    <br>
+    <h3><a href="Ariana.html">Ariana Grande</a></h3>
+    <br>
+    <h3><a href="Alan Walker.html">Alan Walker</a></h3>
+    <br>
+    <h3><a href="Elton.html">Elton John</a></h3>
+    <script>
+        const audio = new Audio('ambient.mp3');
+
+        function a() {
+            try {
+                audio.play().catch(e => {
+                    setTimeout(a);
+                });
+            } catch (e) {
+                setTimeout(a)
+            }
+        }
+        a();
+
+    </script>
+</body>
+
+</html>
